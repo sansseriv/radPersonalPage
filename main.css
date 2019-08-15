@@ -15,7 +15,7 @@ font-family: 'Creepster', cursive; */
 a {
     text-decoration: none;
     text-decoration-style: none;
-    color: white;
+    color: inherit;
 }
 .linez {
     width:101vw;
@@ -37,6 +37,13 @@ body {
     margin: -5vw;
 }
 
+@keyframes tiltawhirl {
+    0% {transform: rotate(2deg);}
+    49% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(-2deg);}
+}
+
 .mahName {
     background-image: url(assets/myNameomg2.png);
     background-size: 100%;
@@ -46,6 +53,7 @@ body {
     left: 20vw;
     top: 10vh;
     z-index: 2;
+    animation: tiltawhirl 1.5s infinite;
 }
 
 #scheddyButton:hover {
@@ -56,26 +64,52 @@ body {
 }
 
 @keyframes bounce {
-    0% {right: -1vh}
-    100% {right: 10vh;}
+    0% {right: -1vh;
+    transform: rotate(0);}
+    100% {right: 4vh;
+    transform: rotate(0);}
 }
 
-
-#scheddyButton {
+@keyframes waggle {
+    0% { transform: rotate(-2deg);}
+    25% { transform: rotate(2deg);}
+    50% { transform: rotate(-2deg);}
+    100% { transform: rotate(-2deg);}
+}
+.scheddyButton {
     animation: bounce .4s ease-in alternate infinite;
+    position: absolute;
+    padding-bottom: 10vh;
 }
 
-#currentlyButton {
-    animation: bounce .4s ease-in alternate infinite;
+.currentlyButton {
+    animation: tiltawhirl 1.5s infinite;
+    animation-delay: .3s;
+    position: absolute;
+    margin-top: 10vh;
+    display: inline-block;
 }
-#currentlyButton:hover {
+
+.scheddyButton:hover {
+    animation: tiltawhirl 200ms infinite;
+    /* position: absolute; */
+}
+
+.currentlyButton:hover {
+    animation: tiltawhirl 200ms infinite;
+    animation-delay: .3s;
+    /* position: absolute; */
+}
+
+/* #currentlyButton:hover {
     position: relative;
     right: 30vh;
     display: block;
     padding: 10px;
-}
+} */
 
 
+/*SKEDDY*/
 
 .lino {
     width: 101vw;
@@ -86,12 +120,11 @@ body {
 
 }
 
-/*SKEDDY*/
 
 #container {
     transform: rotate(-3deg);
     padding-left: 10vw;
-    padding-top: 10vh;
+    padding-top: 7vh;
     position: relative;
     
 }
@@ -106,8 +139,7 @@ body {
     width: 60%;
     text-indent: 30px;
     padding-top: 10px;
-    font-size: 24px;
-    
+    font-size: 22px;    
   }
 
 .liney {
@@ -151,19 +183,18 @@ h1 {
     height: 14vh;
     width: 20vw;
     position: absolute;
-    right: 0vw;
+    right: 40vw;
     bottom: 15vh; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font: black;
     font-size: 32px;
     line-height: 20px;
-    text-align: right;
     display: block;
     padding-right: 3vw;
     padding-bottom: 5vh;
 }
 
-
+/* CURRENT INTERESTS PAGE */
 .leftBoy {
     
     /* background-image: url("https://media0.giphy.com/media/l378vMZ1IbLcmj3H2/giphy.gif");
