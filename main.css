@@ -163,6 +163,7 @@ body {
     font-family: 'IM Fell DW Pica SC', serif;
     line-height: 70px;
 }
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
