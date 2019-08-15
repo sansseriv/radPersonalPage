@@ -1,0 +1,227 @@
+/* font-family: 'Lexend Deca', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Faster One', cursive;
+font-family: 'Creepster', cursive; */
+
+#ivyb {
+    height: 200px;
+    width: 105vw;
+    transform: rotate(-3deg);
+    z-index: 2;
+    
+}
+
+a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+}
+.linez {
+    width:101vw;
+    height: 25vh;
+    z-index: 1;
+    position: absolute;
+    margin-top: 20vh;
+    transform: rotate(-3deg);
+}
+
+body {
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #ffffcc;
+}
+
+.essveegee {
+    position: relative;
+    margin: -5vw;
+}
+
+.mahName {
+    background-image: url(assets/myNameomg2.png);
+    background-size: 100%;
+    width: 755px;
+    height: 295px;
+    position: absolute;
+    left: 20vw;
+    top: 10vh;
+    z-index: 2;
+}
+
+#scheddyButton:hover {
+    position: relative;
+    right: 30vh;
+    display: block;
+    padding: 10px;
+}
+
+@keyframes bounce {
+    0% {right: -1vh}
+    100% {right: 10vh;}
+}
+
+
+#scheddyButton {
+    animation: bounce .4s ease-in alternate infinite;
+}
+
+#currentlyButton {
+    animation: bounce .4s ease-in alternate infinite;
+}
+#currentlyButton:hover {
+    position: relative;
+    right: 30vh;
+    display: block;
+    padding: 10px;
+}
+
+
+
+.lino {
+    width: 101vw;
+    background-color: #ff6666;
+    height: 7px;
+    margin-top: 1.5vh;
+    position: relative;
+
+}
+
+/*SKEDDY*/
+
+#container {
+    transform: rotate(-3deg);
+    padding-left: 10vw;
+    padding-top: 10vh;
+    position: relative;
+    
+}
+
+  .column {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    width: 60%;
+    text-indent: 30px;
+    padding-top: 10px;
+    font-size: 24px;
+    
+  }
+
+.liney {
+    height: 3px;
+    width: 46px;
+    background-color: black;
+    /* padding: 50%; this looks stinkin cool */
+    position: inherit;
+    margin-left: 27%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.heady {
+    font-family: 'IM Fell DW Pica SC', serif;
+    line-height: 70px;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h1 {
+    font-family:'Righteous', cursive;
+    font-size: 80px;
+    /* text-align: center; */
+    font: black;
+    line-height: 20px;
+    margin-left: 30vw;
+}
+
+.navlinks {
+    height: 14vh;
+    width: 20vw;
+    position: absolute;
+    right: 0vw;
+    bottom: 15vh; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: black;
+    font-size: 32px;
+    line-height: 20px;
+    text-align: right;
+    display: block;
+    padding-right: 3vw;
+    padding-bottom: 5vh;
+}
+
+
+.leftBoy {
+    
+    /* background-image: url("https://media0.giphy.com/media/l378vMZ1IbLcmj3H2/giphy.gif");
+    background-blend-mode: color-burn; */
+    height: 101vh;
+    width: 30vw;
+    left: 0px;
+    padding-left: -1vw;
+    margin-top: -1vh;
+    position: absolute; 
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+.rightBoy {
+    background-image: url("https://media1.giphy.com/media/OVlFjmEDhx9rG/giphy.gif");
+    background-blend-mode: multiply;
+    filter: brightness(.1);
+    right:0px;
+    width: 70vw;
+    position: absolute;
+    height: 101vh;
+    margin-top: -2vh;
+}
+
+.rightContent {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 20vh;   
+    right: 0px;
+    z-index: 2;
+
+}
+#menublur {
+    padding-left: 5.2vw;
+    display: inline-block;
+    font-size: 46px;   
+    line-height: 20px;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255,255,255,0.9);
+    position: absolute;
+}
+
+#menu {
+    padding-left: 5vw;
+    display: inline-block;
+    font-size: 46px;   
+    line-height: 20px;
+    color: white;
+    position: absolute;
+}
+
+h6 {
+    font-size: 46px;
+}
+
+p:hover {
+    color: blue;
+    background-color: white;
+}
